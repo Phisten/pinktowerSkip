@@ -1,0 +1,32 @@
+ {
+    "name": "pinktower URL直リンク",
+    "version": "1.0",
+    "description": "skip pinktower site",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://www.pinktower.com/",
+        "activeTab",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+      },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "icon.png",
+          "32": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+        }
+    },
+    "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+    },
+    "manifest_version": 2
+  }
